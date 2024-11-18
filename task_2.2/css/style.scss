@@ -102,7 +102,7 @@ html, body {height: 100%;}
 .dish_image {
     min-width: 237px;
     
-    background: url(../images/dish.png) no-repeat center center;
+    // background: url(../images/dish.png) no-repeat center center;
 }
 
 .dish_header {
@@ -150,6 +150,7 @@ html, body {height: 100%;}
 
     font-size: 15px;
     font-weight: 300;
+    line-height: 22px;
 }
 
 .dish_more {

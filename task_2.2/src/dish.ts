@@ -27,4 +27,31 @@ class Dish {
 
     public get picture(): string            {return this._picture;}
     public set picture(value: string)       {this._picture = value;}
+    
+    render() {
+        const parent = document.querySelector('.dishes') as HTMLElement;
+
+        parent.innerHTML += `
+            <div class="dish">
+                <img src="images/${this._picture}" class="dish_image"></img>
+
+                <div class="dish_content">
+                    <div class="dish_header">
+                        <h2 class="dish_title">
+                            ${this._title}
+                        </h2>
+                        <div class="dish_likes">
+                            ${this._likes}
+                        </div>
+                    </div>
+
+                    <div class="dish_description">
+                        ${this._description}
+                    </div>
+
+                    <a href="#" class="dish_more">Read more >></a>
+                </div>
+            </div>
+        `;
+    }
 }
