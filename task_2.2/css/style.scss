@@ -1,0 +1,57 @@
+html, body {height: 100%;}
+
+.container {
+    padding: 70px 175px 110px 175px;
+
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.logo {
+    margin-bottom: 60px;
+    padding-bottom: 15px;
+
+    width: 180px;
+    
+    border-bottom: 1px solid #AEAEAE;
+}
+
+.filtres {
+    margin-bottom: 95px;
+
+    display: flex;
+    gap: 17px;
+}
+
+.filter {
+    padding: 0 16px;
+
+    height: 55px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+
+    border: 1px solid #FF3D00;
+    border-radius: 7px;
+
+    font-size: 24px;
+    color: #FF3D00;
+
+    transition: background-color 0.5s ease-out, color 0.5s ease-out;
+    
+    &:hover {
+        background-color: #FF3D00;
+        color: white;
+        // font-weight: 600;
+    }
+}
