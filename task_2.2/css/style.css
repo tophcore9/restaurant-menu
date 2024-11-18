@@ -23,6 +23,7 @@ html, body {
 .filtres {
   margin-bottom: 95px;
   display: flex;
+  flex-flow: row wrap;
   gap: 17px;
 }
 
@@ -42,4 +43,72 @@ html, body {
 .filter:hover {
   background-color: #FF3D00;
   color: white;
+}
+
+.dishes {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 45px 15px;
+  justify-content: space-between;
+}
+
+.dish {
+  width: calc(50% - 15px);
+  min-height: 160px;
+  display: flex;
+  gap: 18px;
+}
+
+.dish_image {
+  min-width: 237px;
+  background: url(../images/dish.png) no-repeat center center;
+}
+
+.dish_header {
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #AEAEAE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dish_title {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.dish_likes {
+  display: flex;
+  gap: 5px;
+  color: #FF3D00;
+  font-size: 14px;
+  font-weight: 600;
+}
+.dish_likes::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: url(../images/like-ico.svg) no-repeat center center;
+}
+
+.dish_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dish_description {
+  flex-grow: 2;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.dish_more {
+  font-size: 14px;
+  font-weight: 600;
+  color: #FF3D00;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
