@@ -9,24 +9,28 @@ sort.addEventListener('change', () => {
 });
 // Filter buttons processing
 const filters = document.getElementsByClassName('filter');
-[...filters].forEach(filter => {
+[...filters].forEach((filter) => {
     filter.addEventListener('click', function (event) {
         const currentFilter = event.target;
         // If we click on the element that already pressed then clear all the filters
         if (filter.classList.contains('filter_active')) {
             filter.classList.remove('filter_active');
             dishes.clearRender();
-            dishes.clearChanges().sortBy(sort.options[sort.selectedIndex].value);
+            dishes
+                .clearChanges()
+                .sortBy(sort.options[sort.selectedIndex].value);
             dishes.renderAll();
         }
         // Otherwise filter dishes by their value
         else {
-            [...filters].forEach(element => {
+            [...filters].forEach((element) => {
                 element.classList.remove('filter_active');
             });
             filter.classList.add('filter_active');
             dishes.clearRender();
-            dishes.clearChanges().sortBy(sort.options[sort.selectedIndex].value);
+            dishes
+                .clearChanges()
+                .sortBy(sort.options[sort.selectedIndex].value);
             dishes.filterBy(filter.innerHTML.toLowerCase()).renderAll();
         }
     });
