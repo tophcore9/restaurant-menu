@@ -171,4 +171,20 @@ html, body {height: 100%;}
     text-decoration: none;
 }
 
+.sort {
+    margin-bottom: 30px;
+
+    align-self: flex-end;
+    
+    width: 130px;
+    min-height: 30px;
+    padding-left: 20px;
+    background: url(../images/sort.png) no-repeat left center;
+    border-color: white;
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 // DISHES END

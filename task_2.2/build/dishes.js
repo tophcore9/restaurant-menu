@@ -1,31 +1,83 @@
 "use strict";
 class Dishes {
     constructor(...items) {
-        this._dishes = [...items];
+        this._currentDishes = this._dishes = [...items];
     }
-    renderAll(filter = '') {
-        if (filter != '') {
-            this.filterBy(filter).renderAll();
-        }
-        else {
-            this._dishes.forEach(dish => {
-                dish.render();
-            });
+    renderAll() {
+        this._currentDishes.forEach(dish => {
+            dish.render();
+        });
+    }
+    parseAll() {
+        const images = document.getElementsByClassName('dish_image');
+        const titles = document.getElementsByClassName('dish_title');
+        const likes = document.getElementsByClassName('dish_likes');
+        const descriptions = document.getElementsByClassName('dish_description');
+        for (let i = 0; images.length; ++i) {
+            this.addDish(new Dish(titles[i].innerHTML, descriptions[i].innerHTML, parseInt(likes[i].innerHTML)));
         }
     }
     addDish(dish) {
         this._dishes.push(dish);
     }
-    clearAll() {
+    clearRender() {
         const parent = document.querySelector('.dishes');
         parent.innerHTML = '';
+        return this;
+    }
+    clearChanges() {
+        this._currentDishes = this._dishes;
+        return this;
     }
     filterBy(filter) {
-        let filteredDishes = new Dishes();
+        this._currentDishes = [];
         this._dishes.forEach(dish => {
             if (dish.type == filter)
-                filteredDishes.addDish(dish);
+                this._currentDishes.push(dish);
         });
-        return filteredDishes;
+        return this;
+    }
+    sortBy(sortKey = 'most rated') {
+        if (sortKey == 'most rated') {
+            this._currentDishes.sort((a, b) => {
+                if (a.likes > b.likes)
+                    return -1;
+                if (a.likes < b.likes)
+                    return 1;
+                else
+                    return 0;
+            });
+        }
+        else if (sortKey == 'least rated') {
+            this._currentDishes.sort((a, b) => {
+                if (a.likes < b.likes)
+                    return -1;
+                if (a.likes > b.likes)
+                    return 1;
+                else
+                    return 0;
+            });
+        }
+        else if (sortKey == 'ascending') {
+            this._currentDishes.sort((a, b) => {
+                if (a.title < b.title)
+                    return -1;
+                if (a.title > b.title)
+                    return 1;
+                else
+                    return 0;
+            });
+        }
+        else if (sortKey == 'descending') {
+            this._currentDishes.sort((a, b) => {
+                if (a.title > b.title)
+                    return -1;
+                if (a.title < b.title)
+                    return 1;
+                else
+                    return 0;
+            });
+        }
+        return this;
     }
 }

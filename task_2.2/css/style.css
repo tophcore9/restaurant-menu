@@ -127,4 +127,17 @@ html, body {
   font-weight: 600;
   color: #FF3D00;
   text-decoration: none;
+}
+
+.sort {
+  margin-bottom: 30px;
+  align-self: flex-end;
+  width: 130px;
+  min-height: 30px;
+  padding-left: 20px;
+  background: url(../images/sort.png) no-repeat left center;
+  border-color: white;
+}
+.sort:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
