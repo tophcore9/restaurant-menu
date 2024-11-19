@@ -45,11 +45,14 @@ html, body {
   border-radius: 7px;
   font-size: 24px;
   color: #FF3D00;
-  transition: background-color 0.5s ease-out, color 0.5s ease-out;
+  transition: background-color 0.5s ease-out, color 0.5s ease-out, transform 0.1s ease-out;
 }
 .filter:hover {
-  background-color: #FF3D00;
   color: white;
+  background-color: #FF3D00;
+}
+.filter:active {
+  transform: scale(1.1);
 }
 
 .filter_active {

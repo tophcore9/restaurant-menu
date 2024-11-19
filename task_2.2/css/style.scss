@@ -19,7 +19,6 @@ html, body {height: 100%;}
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    
 }
 
 .logo {
@@ -62,12 +61,18 @@ html, body {height: 100%;}
     font-size: 24px;
     color: #FF3D00;
 
-    transition: background-color 0.5s ease-out, color 0.5s ease-out;
+    transition: background-color 0.5s ease-out, 
+                color 0.5s ease-out, 
+                transform 0.1s ease-out;
     
     &:hover {
-        background-color: #FF3D00;
         color: white;
+        background-color: #FF3D00;
         // font-weight: 600;
+    }
+    
+    &:active {
+        transform: scale(1.1);
     }
 }
 
