@@ -7,9 +7,16 @@ class Dish {
         this._type = type;
         this._picture = picture;
     }
-    get type() {
-        return this._type;
-    }
+    get title() { return this._title; }
+    set title(value) { this._title = value; }
+    get description() { return this._description; }
+    set description(value) { this._description = value; }
+    get likes() { return this._likes; }
+    set likes(value) { this._likes = value; }
+    get type() { return this._type; }
+    set type(value) { this._type = value; }
+    get picture() { return this._picture; }
+    set picture(value) { this._picture = value; }
     render() {
         const parent = document.querySelector('.dishes');
         parent.innerHTML += `

@@ -19,11 +19,23 @@ class Dish {
         this._picture = picture;
     }
     
-    public get type(): string {
-        return this._type;
-    }
+    public get title(): string {return this._title}
+    public set title(value: string) {this._title = value}
+
+    public get description(): string {return this._description}
+    public set description(value: string) {this._description = value}
     
-    render() {
+    public get likes(): number {return this._likes}
+    public set likes(value: number) {this._likes = value}
+
+    public get type(): string {return this._type}
+    public set type(value: string) {this._type = value}
+
+    public get picture(): string {return this._picture}
+    public set picture(value: string) {this._picture = value}
+
+
+    public render() {
         const parent = document.querySelector('.dishes') as HTMLElement;
 
         parent.innerHTML += `

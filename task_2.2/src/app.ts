@@ -50,18 +50,5 @@ let dishes: Dishes = new Dishes(
     )
 );
 
+let filters: Filters = new Filters();
 dishes.renderAll();
-
-const filters = document.getElementsByClassName('filter');
-
-[...filters].forEach(item => {
-    item.addEventListener('click', function(event) {
-        const target = event.target as HTMLElement;
-        
-        target.style.backgroundColor = '#FF3D00'
-        target.style.color = 'white'
-
-        dishes.clearAll();
-        dishes.renderAll(target.innerHTML.toLowerCase());
-    })
-});

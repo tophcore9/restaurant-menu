@@ -51,6 +51,11 @@ html, body {
   color: white;
 }
 
+.filter_active {
+  background-color: #FF3D00;
+  color: white;
+}
+
 .dishes {
   width: 100%;
   display: flex;
