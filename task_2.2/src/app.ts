@@ -1,53 +1,130 @@
 let dishes: Dishes = new Dishes(
     new Dish(
-    'New title 1',
-    'agdsnlvzxjiosd gasdl gkjlkweqtn lksjdavoidjfejfa sdio j jtewt knlv',
-    473,
+    'Bruschetta',
+    'Toasted baguette topped with diced tomatoes, garlic, basil, and olive oil.',
+    1973,
+    'appertizers',
+    'bruschetta.jpg'
+    ),
+    new Dish(
+    'Stuffed Mushrooms',
+    'Mushroom caps filled with cream cheese, garlic, spinach, and herbs.',
+    846,
+    'appertizers',
+    'stuffed_mushrooms.jpg'
+    ),
+    new Dish(
+    'Mozzarella Sticks',
+    'Toasted baguette topped with diced tomatoes, garlic, basil, and olive oil.',
+    2331,
+    'appertizers',
+    'mozzarella_sticks.jpg'
+    ),
+    new Dish(
+    'Calamari Fritti',
+    'Fried squid served with a tangy marinara dipping sauce.',
+    1371,
+    'appertizers',
+    'calamari_fritti.jpg'
+    ),
+    new Dish(
+    'Tomato Basil Soup',
+    'Rich tomato soup with fresh basil, served with a slice of grilled cheese.',
+    1181,
+    'soups',
+    'tomato_basil_soup.jpg'
+    ),
+    new Dish(
+    'Lobster Bisque',
+    'Creamy soup made with fresh lobster, served with a drizzle of sherry.',
+    3142,
+    'soups',
+    'lobster_bisque.jpg'
+    ),
+    new Dish(
+    'Caesar Salad',
+    'Romaine lettuce, croutons, parmesan cheese, and Caesar dressing.',
+    3142,
+    'salads',
+    'caesar_salad.jpg'
+    ),
+    new Dish(
+    'Greek Salad',
+    'Mixed greens, feta cheese, Kalamata olives, cucumbers, red onions, and a lemon-oregano dressing.',
+    3142,
+    'salads',
+    'greek_salad.jpg'
+    ),
+    new Dish(
+    'Waldorf Salad',
+    'A blend of apples, celery, walnuts, and grapes in a creamy dressing.',
+    3142,
+    'salads',
+    'waldorf_salad.jpg'
+    ),
+    new Dish(
+    'Caprese Salad',
+    'Fresh mozzarella, tomatoes, basil, olive oil, and balsamic glaze.',
+    3142,
+    'salads',
+    'caprese_salad.jpg'
+    ),
+    new Dish(
+    'Grilled Ribeye Steak',
+    '12 oz ribeye served with mashed potatoes and steamed vegetables.',
+    3142,
+    'entrees',
+    'grilled_ribeye_steak.jpg'
+    ),
+    new Dish(
+    'BBQ Ribs',
+    'Slow-cooked ribs glazed in a smoky BBQ sauce, served with coleslaw and fries.',
+    3142,
+    'entrees',
+    'bbq_ribs.jpg'
+    ),
+    new Dish(
+    'Lamb Chops',
+    'Grilled lamb chops served with rosemary potatoes and sautéed spinach.',
+    3142,
+    'entrees',
+    'lamb_chops.jpg'
+    ),
+    new Dish(
+    'Cheesecake',
+    'Creamy cheesecake with a graham cracker crust, served plain or with a fruit topping.',
+    3142,
+    'desserts',
+    'cheesecake.jpg'
+    ),
+    new Dish(
+    'Gelato',
+    'Italian-style ice cream in various flavors, including chocolate, vanilla, and pistachio.',
+    3142,
+    'desserts',
+    'gelato.jpg'
+    ),
+    new Dish(
+    'Tiramisu',
+    'A classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.',
+    3142,
+    'desserts',
+    'tiramisu.jpg'
+    ),
+    new Dish(
+    'Orange Juice',
+    '',
+    3142,
     'drinks',
-    'dish.png'
+    'orange_juice.jpg'
     ),
     new Dish(
-    'New title 2',
-    'agdsnlvzxjiosd gasdl gkjlkweqtn lksjdavoidjfejfa sdio j jtewt knlv',
-    843,
-    'aper',
-    'dish.png'
-    ),
-    new Dish(
-    'New title 3',
-    'agdsnlvzxjiosd gasdl gkjlkweqtn lksjdavoidjfejfa sdio j jtewt knlv',
-    1473,
+    'Coffee',
+    'Regular or Decaf',
+    3142,
     'drinks',
-    'dish.png'
+    'coffee.jpg'
     ),
-    new Dish(
-    'New title 4',
-    'agdsnlvzxjiosd gasdl gkjlkweqtn lksjdavoidjfejfa sdio j jtewt knlv',
-    1723,
-    'dasknl',
-    'dish.png'
-    ),
-    new Dish(
-    'New title 5',
-    'agdsnlvzxjiosd gasdl gkjlkweqtn lksjdavoidjfejfa sdio j jtewt knlv',
-    843,
-    'zxucb',
-    'dish.png'
-    ),
-    new Dish(
-    'New title 6',
-    'agdsnlvzxjiosd gasdl gkjlkweqtn lksjdavoidjfejfa sdio j jtewt knlv',
-    1473,
-    'znueyqj',
-    'dish.png'
-    ),
-    new Dish(
-    'New title 7',
-    'agdsnlvzxjiosd gasdl gkjlkweqtn lksjdavoidjfejfa sdio j jtewt knlv',
-    1723,
-    'drinks',
-    'dish.png'
-    )
 );
 
 let filters: Filters = new Filters();
