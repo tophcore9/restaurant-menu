@@ -41,6 +41,7 @@ html, body {height: 100%;}
 
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     gap: 17px;
 }
 
@@ -88,14 +89,15 @@ html, body {height: 100%;}
     
     display: flex;
     flex-flow: row wrap;
-    gap: 45px 15px;
-    justify-content: space-between;
+    gap: 45px 30px;
+    // justify-content: center;
 
     // border: 1px solid black;
 }
 
 .dish {
-    width: calc(50% - 15px);
+    // min-width: 430px;
+    width: calc(50% - 30px);
     min-height: 160px;
 
     display: flex;
@@ -105,7 +107,8 @@ html, body {height: 100%;}
 }
 
 .dish_image {
-    max-width: 237px;
+    min-width: 237px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -144,12 +147,16 @@ html, body {height: 100%;}
 }
 
 .dish_content {
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .dish_description {
+    margin-bottom: 17px;
+
     flex-grow: 2;
 
     font-size: 15px;

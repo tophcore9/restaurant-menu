@@ -1,0 +1,34 @@
+@media (max-width: 1230px) {
+    .container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 930px) {
+    .dishes {
+        width: 100%;
+    }
+    
+    .dish {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 750px) {
+    .dish {
+        flex-wrap: wrap;
+    }
+
+    .dish_image {
+        min-width: 100%;
+    }
+
+    .filtres {
+        margin-bottom: 46px;
+    }
+
+    .logo {
+        margin-bottom: 35px;
+    }
+}
