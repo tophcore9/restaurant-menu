@@ -8,15 +8,6 @@ class Dishes {
             dish.render();
         });
     }
-    parseAll() {
-        const images = document.getElementsByClassName('dish_image');
-        const titles = document.getElementsByClassName('dish_title');
-        const likes = document.getElementsByClassName('dish_likes');
-        const descriptions = document.getElementsByClassName('dish_description');
-        for (let i = 0; images.length; ++i) {
-            this.addDish(new Dish(titles[i].innerHTML, descriptions[i].innerHTML, parseInt(likes[i].innerHTML)));
-        }
-    }
     addDish(dish) {
         this._dishes.push(dish);
     }

@@ -127,12 +127,19 @@ let dishes: Dishes = new Dishes(
     ),
 );
 
+
 dishes.sortBy().renderAll();
+// Sort select processing
+const sort = document.querySelector('.sort') as HTMLSelectElement;
+sort.addEventListener('change', () => {
+    dishes.clearRender();
+    dishes.sortBy(sort.options[sort.selectedIndex].value).renderAll();
+})
+
 
 
 // Filter buttons processing
 const filters = document.getElementsByClassName('filter') as HTMLCollectionOf<Element>;
-
 [...filters].forEach(filter => {
     filter.addEventListener('click', function(event) {
         const currentFilter = event.target as HTMLElement;
@@ -141,7 +148,7 @@ const filters = document.getElementsByClassName('filter') as HTMLCollectionOf<El
         if (filter.classList.contains('filter_active')) {
             filter.classList.remove('filter_active');
             dishes.clearRender();
-            dishes.clearChanges();
+            dishes.clearChanges().sortBy(sort.options[sort.selectedIndex].value);
             dishes.renderAll();
         }
         // Otherwise filter dishes by their value
@@ -152,16 +159,8 @@ const filters = document.getElementsByClassName('filter') as HTMLCollectionOf<El
 
             filter.classList.add('filter_active');
             dishes.clearRender();
-            dishes.clearChanges();
+            dishes.clearChanges().sortBy(sort.options[sort.selectedIndex].value);
             dishes.filterBy(filter.innerHTML.toLowerCase()).renderAll();
         }
     })
 });
-
-
-// Sort select processing
-const sort = document.querySelector('.sort') as HTMLSelectElement;
-sort.addEventListener('change', () => {
-    dishes.clearRender();
-    dishes.sortBy(sort.options[sort.selectedIndex].value).renderAll();
-})

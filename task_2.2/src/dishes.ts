@@ -12,17 +12,6 @@ class Dishes {
         })
     }
     
-    public parseAll() {
-        const images = document.getElementsByClassName('dish_image') as HTMLCollectionOf<Element>;
-        const titles = document.getElementsByClassName('dish_title') as HTMLCollectionOf<Element>;
-        const likes = document.getElementsByClassName('dish_likes') as HTMLCollectionOf<Element>;
-        const descriptions = document.getElementsByClassName('dish_description') as HTMLCollectionOf<Element>;
-        
-        for (let i = 0; images.length; ++i) {
-            this.addDish(new Dish(titles[i].innerHTML, descriptions[i].innerHTML, parseInt(likes[i].innerHTML), ))
-        }
-    }
-    
     public addDish(dish: Dish) {
         this._dishes.push(dish);
     }
