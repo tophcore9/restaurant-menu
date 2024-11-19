@@ -4,13 +4,13 @@ class Dish {
     private _likes: number;
     private _picture: string;
     private _type: string;
-    
+
     constructor(
         title: string = 'Untitled',
         description: string = '',
         likes: number = 0,
         type: string = '',
-        picture: string = ''
+        picture: string = '',
     ) {
         this._title = title;
         this._description = description;
@@ -18,22 +18,41 @@ class Dish {
         this._type = type;
         this._picture = picture;
     }
-    
-    public get title(): string {return this._title}
-    public set title(value: string) {this._title = value}
 
-    public get description(): string {return this._description}
-    public set description(value: string) {this._description = value}
-    
-    public get likes(): number {return this._likes}
-    public set likes(value: number) {this._likes = value}
+    public get title(): string {
+        return this._title;
+    }
+    public set title(value: string) {
+        this._title = value;
+    }
 
-    public get type(): string {return this._type}
-    public set type(value: string) {this._type = value}
+    public get description(): string {
+        return this._description;
+    }
+    public set description(value: string) {
+        this._description = value;
+    }
 
-    public get picture(): string {return this._picture}
-    public set picture(value: string) {this._picture = value}
+    public get likes(): number {
+        return this._likes;
+    }
+    public set likes(value: number) {
+        this._likes = value;
+    }
 
+    public get type(): string {
+        return this._type;
+    }
+    public set type(value: string) {
+        this._type = value;
+    }
+
+    public get picture(): string {
+        return this._picture;
+    }
+    public set picture(value: string) {
+        this._picture = value;
+    }
 
     public render() {
         const parent = document.querySelector('.dishes') as HTMLElement;
