@@ -72,7 +72,9 @@ html, body {
 }
 
 .dish_image {
-  min-width: 237px;
+  max-width: 237px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .dish_header {

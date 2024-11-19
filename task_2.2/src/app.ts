@@ -44,84 +44,84 @@ let dishes: Dishes = new Dishes(
     new Dish(
     'Caesar Salad',
     'Romaine lettuce, croutons, parmesan cheese, and Caesar dressing.',
-    3142,
+    7163,
     'salads',
     'caesar_salad.jpg'
     ),
     new Dish(
     'Greek Salad',
     'Mixed greens, feta cheese, Kalamata olives, cucumbers, red onions, and a lemon-oregano dressing.',
-    3142,
+    1638,
     'salads',
     'greek_salad.jpg'
     ),
     new Dish(
     'Waldorf Salad',
     'A blend of apples, celery, walnuts, and grapes in a creamy dressing.',
-    3142,
+    836,
     'salads',
     'waldorf_salad.jpg'
     ),
     new Dish(
     'Caprese Salad',
     'Fresh mozzarella, tomatoes, basil, olive oil, and balsamic glaze.',
-    3142,
+    6156,
     'salads',
     'caprese_salad.jpg'
     ),
     new Dish(
     'Grilled Ribeye Steak',
     '12 oz ribeye served with mashed potatoes and steamed vegetables.',
-    3142,
+    7119,
     'entrees',
     'grilled_ribeye_steak.jpg'
     ),
     new Dish(
     'BBQ Ribs',
     'Slow-cooked ribs glazed in a smoky BBQ sauce, served with coleslaw and fries.',
-    3142,
+    4251,
     'entrees',
     'bbq_ribs.jpg'
     ),
     new Dish(
     'Lamb Chops',
     'Grilled lamb chops served with rosemary potatoes and sautéed spinach.',
-    3142,
+    6715,
     'entrees',
     'lamb_chops.jpg'
     ),
     new Dish(
     'Cheesecake',
     'Creamy cheesecake with a graham cracker crust, served plain or with a fruit topping.',
-    3142,
+    10263,
     'desserts',
     'cheesecake.jpg'
     ),
     new Dish(
     'Gelato',
     'Italian-style ice cream in various flavors, including chocolate, vanilla, and pistachio.',
-    3142,
+    9628,
     'desserts',
     'gelato.jpg'
     ),
     new Dish(
     'Tiramisu',
     'A classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.',
-    3142,
+    1638,
     'desserts',
     'tiramisu.jpg'
     ),
     new Dish(
     'Orange Juice',
-    '',
-    3142,
+    'Squeeze the day’s brightness into every sip with our freshly squeezed orange juice.',
+    1623,
     'drinks',
     'orange_juice.jpg'
     ),
     new Dish(
     'Coffee',
-    'Regular or Decaf',
-    3142,
+    'Our freshly brewed coffee is made from premium, hand-picked beans, carefully roasted to bring out a rich, full-bodied flavor.',
+    17362,
     'drinks',
     'coffee.jpg'
     ),

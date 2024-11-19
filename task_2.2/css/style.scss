@@ -105,9 +105,8 @@ html, body {height: 100%;}
 }
 
 .dish_image {
-    min-width: 237px;
-    
-    // background: url(../images/dish.png) no-repeat center center;
+    max-width: 237px;
+    object-fit: cover;
 }
 
 .dish_header {
