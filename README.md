@@ -6,6 +6,12 @@ This is a clean and simple front-end layout for a restaurant menu. It's built wi
 
 ## 🚀 Getting Started
 
+### Preview
+
+https://tophcore9.github.io/restaurant-menu
+
+https://github.com/user-attachments/assets/200dd280-54c4-4044-92b4-df6a893f8482
+
 ### Installation
 
 1.  **Clone the repository:**
@@ -57,4 +63,4 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## 👨‍💻 Author
 
-* **Oleksii Paziura (tophcore9)** - [@tophcore9](https://github.com/tophcore9)
+* **Oleksii Paziura** - [@tophcore9](https://github.com/tophcore9)
